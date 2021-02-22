@@ -1,15 +1,16 @@
 import React from "react";
-import whoseHouse from "./houses/HagridsHouse";
+// import whoseHouse from "./houses/HagridsHouse";
+import whoseHouse from "./houses/whoseHouse";
 import HooflePoof from "./houses/Hufflepuff";
-import * as GryffFunctions from "./houses/Gryffindor";
+import {colors, gryffMascot as mascot, values} from "./houses/Gryffindor";
 
-GryffFunctions.colors();
+colors();
 // => 'Scarlet and Gold'
 
-GryffFunctions.gryffMascot();
+mascot();
 // => 'The Lion'
 
-GryffFunctions.values();
+values();
 // => ReferenceError: values is not defined
 
 export default function Hogwarts() {
@@ -25,3 +26,4 @@ export default function Hogwarts() {
     </div>
   );
 }
+// export default Hogwarts;
